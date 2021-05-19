@@ -1,0 +1,71 @@
+body{
+	box-sizing: border-box;
+    background-repeat: no-repeat;
+	font-family: montserrat;
+	background-image: url(background1.jpg);
+	background-size:cover;
+}
+
+.menu{
+	background-color: #0082e6;
+	text-align: center;
+	
+}
+
+.menu ul{
+	list-style-type: none;
+	
+}
+.menu ul li{
+	display: inline-flex;
+	width: 100px;
+    margin: 10px;
+    padding: 10px;
+
+}
+.menu ul li a{
+text-decoration: none;
+color: white;
+}
+.on,.menu ul li:hover{
+	background-color:#1b9bff;
+	border-radius: 3px; 
+
+}
+.introduce{
+	text-align: center;
+}
+.contact{
+	float: right;
+	background-color:#DCDCDC;
+
+}
+form{
+	color: black;
+}
+fieldset{
+	background-color:#DCDCDC ;
+}
+.submit{
+	text-align: center;
+	border: solid;
+	background-color: ;
+	border-radius: 5px;
+	background-color: darkgrey;
+
+}
+button{
+ border: solid;
+ margin: 10px;
+ border-radius: 12px;
+ background-color: darkgrey;
+}
+.cv{
+	color: black;
+	border: 5px solid;
+	background-color: white;
+
+}
+.photo{
+ padding: 10px;
+}
