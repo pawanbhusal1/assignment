@@ -2,8 +2,37 @@ body{
 	box-sizing: border-box;
     background-repeat: no-repeat;
 	font-family: montserrat;
-	background-image: url(background1.jpg);
+	background-image: url(background3.jpg);
 	background-size:cover;
+}
+
+.button{
+	display: none;
+	position: absolute;
+	flex-direction: column;
+	width: 30px;
+	height: 21px;
+	top: .75rem;
+	right: 1rem;
+	justify-content: space-between;
+
+}
+ .bar{
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+@media (max-width: 700px){
+	.button{
+		display: flex;
+
+	}
+	.navbar{
+		width: 0;
+		margin:10px;
+	}
+
 }
 
 .menu{
@@ -32,8 +61,21 @@ color: white;
 	border-radius: 3px; 
 
 }
-.introduce{
+.introduce {
 	text-align: center;
+	height: 300px;
+	width: 600px;
+	 
+	margin: 20% 30%;
+	
+	
+}
+.introduce h1{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 100px;
+	text-shadow: 8px 8px 15px #3F2323;
 }
 .contact{
 	float: right;
@@ -45,6 +87,10 @@ form{
 }
 fieldset{
 	background-color:#DCDCDC ;
+}
+.cont{
+	color: white;
+	text-shadow: 4px 4px 5px black;
 }
 .submit{
 	text-align: center;
@@ -69,3 +115,25 @@ button{
 .photo{
  padding: 10px;
 }
+.desc{
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	text-shadow: 3px 3px 5px brown;
+}
+.placeholder{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 10px;
+	padding: 10px;
+}
+.placeholder1{
+	background-color: white;
+	border: 3px solid black;
+	padding: 20px;
+	text-align: center;
+	border-radius: 8px;
+
+}
+
+
