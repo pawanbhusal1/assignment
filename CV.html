@@ -2,39 +2,49 @@
 <html>
 <head>
 	<title>CV</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<meta name="viewport" content="width=device=width, initial-scale=1.0">
 </head>
 <body>
-	<nav class="menu">
-		<a href="#" class="button">
-		<span class="bar"></span>
-	    <span class="bar"></span>		
-	    <span class="bar"></span>
-	</a>
+<nav class="menu">
+	
    <div class="navbar">
-	<ul>
-		<li ><a href="index.html">Home</a></li>
+    <ul>
+		<li><a href="index.html">Home</a></li>
 		<li><a href="portfolio.html">Portfolio</a></li>
 		<li><a href="contact.html">Contact</a></li>
-		<li class="on"><a href="#">CV</a></li>
+		<li class="on"><a href="CV.html">CV</a></li>
 		<li><a href="site.html"> Site Report</a></li>
 	</ul>
 </div>
+<div class="menu-bar" onclick=showNav()>
+	<i class="fas fa-bars"></i>
+</div>
 </nav>
+
+
+
+<script>
+	const navBar = document.querySelector(".navbar")
+	function showNav(){
+	navBar.classList.toggle("show")
+}
+</script>
+
 <div class="cv">
-	<img class="photo" src="background.jpg" width="25%" height="150px" align= "right">
-<center><h1>Pawan bhusal</h1>
+	<img class="photo" src="background.jpg" width="15%" height="200px" align= "right">
+<div class="center"><h1>Pawan bhusal</h1>
 	<h3>Pepsicola,Kathmandu</h3>
 	<h3>Phone:9840147540</h3>   
-	<h3>Email:coolman.prajwol11@gmail.com</h3></center>
+	<h3>Email:prajwol11@gmail.com</h3></center></div>
 <br>
 <h2 class="cont"><b><u><div style="background-color: grey;padding: 10px">
 Personal Profile statement</u></b></h2>
 <h3>I am an energetic,hardworking,ambitious person who has developed a responsible approach to any task. I am able to work under pressure and have developed skills in IT field.</h3>
 <h2 class="cont"><u><div style="background-color: grey;padding: 10px">
 Acadmic Qualification</u> </h2>
-<table border="2" width="75%">
+<table border="2" width="50%">
 	<tr>
 		<th>Qualification</th>
 		<th>School/Collage</th>

@@ -1,144 +1,163 @@
-body{
-	box-sizing: border-box;
-    background-repeat: no-repeat;
-	font-family: montserrat;
-	background-image: url(background3.jpg);
-	background-size:cover;
-	height: 100vh;
+body {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  font-family: montserrat;
+  background-image: url(background3.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 
-.button{
-	display: none;
-	position: absolute;
-	flex-direction: column;
-	width: 30px;
-	height: 21px;
-	top: .75rem;
-	right: 1rem;
-	justify-content: space-between;
-
+.button {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  width: 30px;
+  height: 21px;
+  top: 0.75rem;
+  right: 1rem;
+  justify-content: space-between;
 }
- .bar{
-	height: 3px;
-	width: 100%;
-	background-color: white;
-	border-radius: 10px;
+.menu-bar {
+  font-size: 2rem;
+  color: white;
+  display: none;
 }
-@media (max-width: 700px){
-	.button{
-		display: flex;
-
-	}
-	.navbar{
-		width: 0;
-		margin:10px;
-	}
-	
-	
-
+.welcome-msg {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 8px 8px 15px #3f2323;
+  transition: 0.5s all ease;
 }
-
-.menu{
-	background-color: #0082e6;
-	text-align: center;
-	
-}
-
-.menu ul{
-	list-style-type: none;
-	
-}
-.menu ul li{
-	display: inline-flex;
-	width: 100px;
+@media (max-width: 700px) {
+  .button {
+    display: flex;
+  }
+  .navbar {
+    width: 0;
     margin: 10px;
-    padding: 10px;
-
+    display: none;
+    color: white;
+  }
+  .navbar.show {
+    display: block;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .welcome-msg {
+    font-size: 1rem;
+  }
+  
+ 
 }
-.menu ul li a{
-text-decoration: none;
-color: white;
-}
-.on,.menu ul li:hover{
-	background-color:#1b9bff;
-	border-radius: 3px; 
 
+
+.menu {
+  background-color: #0082e6;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+.menu ul li {
+  display: inline-flex;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+.on,
+.menu ul li:hover {
+  background-color: #1b9bff;
+  border-radius: 3px;
 }
 .introduce {
-	text-align: center;
-		
-	
+  text-align: center;
+  font-size: 5vw;
+  margin-top: 15%;
+  background: linear-gradient(120deg,#ff0000,#00d0ff,#ffff00,#ff00f3,#0033ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation: animate 10s linear infinite;
+  background-size: 400%;
 }
-.introduce h1{
-	text-align: center;
-	color: white;
-	text-transform: uppercase;
-	font-size: 100px;
-	text-shadow: 8px 8px 15px #3F2323;
-}
-.contact{
-	float: right;
-	background-color:#DCDCDC;
-
-}
-form{
-	color: black;
-}
-fieldset{
-	background-color:#DCDCDC ;
-}
-.cont{
-	color: white;
-	text-shadow: 4px 4px 5px black;
-}
-.submit{
-	text-align: center;
-	border: 2px solid;
-	color: white;
-	border-radius: 5px;
-	background-color: darkgrey;
-	height: 100vh;
-	background-color: transparent;
-
-}
-button{
- border: solid;
- margin: 10px;
- border-radius: 12px;
- background-color: darkgrey;
-}
-.cv{
-	color: black;
-	border: 5px solid;
-	background-color: white;
-
-}
-.photo{
- padding: 10px;
-}
-.desc{
-	text-align: center;
-	font-size: 30px;
-	color: white;
-	text-shadow: 3px 3px 5px brown;
-}
-.placeholder{
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-column-gap: 10px;
-	padding: 10px;
-}
-.placeholder1{
-	background-color: white;
-	border: 3px solid black;
-	padding: 20px;
-	text-align: center;
-	border-radius: 8px;
-	width: 50%;
-	height: auto;
-	
-
+@keyframes animate {
+  0%{
+    background-position: 0%;
+  }
+   100%{
+    background-position: 400%;
+  }
 
 }
 
-
+.contact {
+  float: right;
+  background-color: #dcdcdc;
+}
+form {
+  color: black;
+}
+fieldset {
+  background-color: #dcdcdc;
+}
+.cont {
+  color: white;
+  text-shadow: 4px 4px 5px black;
+}
+.submit {
+  text-align: center;
+  border: 2px solid;
+  color: white;
+  border-radius: 5px;
+  background-color: darkgrey;
+  height: 100vh;
+  background-color: transparent;
+}
+button {
+  border: solid;
+  margin: 10px;
+  border-radius: 12px;
+  background-color: darkgrey;
+}
+.cv {
+  color: black;
+  border: 5px solid;
+  background-color: white;
+}
+.center{
+  text-align: center;
+}
+.photo {
+  padding: 0px;
+  border-radius: 50%;
+}
+.desc {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  text-shadow: 3px 3px 5px brown;
+}
+.placeholder {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 10px;
+  padding: 10px;
+}
+.placeholder1 {
+  background-color: white;
+  border: 3px solid black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  width: 50%;
+  height: auto;
+}
