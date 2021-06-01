@@ -49,41 +49,53 @@ body {
   .welcome-msg {
     font-size: 1rem;
   }
+  body{
+    background-image:url(responsive.jpg);
+  }
+  
+
   
  
 }
 
 
 .menu {
-  background-color: #0082e6;
+  background-color: #088FD2;
   text-align: center;
   display: flex;
   justify-content: space-between;
+  margin-top: -17px;
+  margin-right: -5px;
+  margin-left: -5px;
 }
 
 .menu ul {
   list-style-type: none;
+
 }
 .menu ul li {
   display: inline-flex;
-  width: 100px;
+  width: 200px;
   margin: 10px;
-  padding: 10px;
+  padding: 8px;
+
+
 }
 .menu ul li a {
   text-decoration: none;
   color: white;
+
 }
 .on,
 .menu ul li:hover {
-  background-color: #1b9bff;
+  background-color: #05ACCD;
   border-radius: 3px;
 }
 .introduce {
   text-align: center;
   font-size: 5vw;
   margin-top: 15%;
-  background: linear-gradient(120deg,#ff0000,#00d0ff,#ffff00,#ff00f3,#0033ff);
+  background: linear-gradient(20deg,#ff0000,#00FFFF,#FFF380,#F70D1A,#8D38C9);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   animation: animate 10s linear infinite;
@@ -102,6 +114,8 @@ body {
 .contact {
   float: right;
   background-color: #dcdcdc;
+  margin-top: 32px;
+  margin-left: 2vw;
 }
 form {
   color: black;
@@ -112,15 +126,31 @@ fieldset {
 .cont {
   color: white;
   text-shadow: 4px 4px 5px black;
+
 }
+.cont1{
+  margin-left: -15px;
+}
+
 .submit {
   text-align: center;
-  border: 2px solid;
+  border: 5px solid;
   color: white;
   border-radius: 5px;
   background-color: darkgrey;
   height: 100vh;
   background-color: transparent;
+}
+.submit h1{
+  font-size: 6vw;
+}
+.submit h2{
+  font-size: 3vw;
+}
+.submit1{
+  box-shadow: 10px 10px #404C4C;
+  
+  
 }
 button {
   border: solid;
@@ -130,8 +160,15 @@ button {
 }
 .cv {
   color: black;
-  border: 5px solid;
+  margin-left: -8px;
+  margin-top: -19px;
   background-color: white;
+  margin-right: -8px;
+}
+.topic{
+background-color: grey;
+padding: 10px;
+background: linear-gradient(120deg,#2B3856,#657383,#2B547E,#15317E);
 }
 .center{
   text-align: center;
@@ -145,12 +182,14 @@ button {
   font-size: 30px;
   color: white;
   text-shadow: 3px 3px 5px brown;
+  margin-top: 15px;
 }
 .placeholder {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 10px;
   padding: 10px;
+
 }
 .placeholder1 {
   background-color: white;
@@ -158,6 +197,20 @@ button {
   padding: 20px;
   text-align: center;
   border-radius: 8px;
-  width: 50%;
+  width: 64%;
   height: auto;
+
+}
+.sitetopic{
+  color: white;
+  font-size: 40px;
+  margin: 5px;
+  background: linear-gradient(20deg,#ff0000,#00FFFF,#FFF380,#F70D1A,#8D38C9);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+
+}
+.paragraph{
+  color: white;
 }
