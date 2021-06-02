@@ -6,7 +6,7 @@ body {
   background-size: cover;
   height: 100vh;
 }
-
+/*this codes are used for navigation bar*/
 .button {
   display: none;
   position: absolute;
@@ -30,6 +30,39 @@ body {
   text-shadow: 8px 8px 15px #3f2323;
   transition: 0.5s all ease;
 }
+
+.menu {
+  background-color: #088FD2;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -17px;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.menu ul {
+  list-style-type: none;
+
+}
+.menu ul li {
+  display: inline-flex;
+  width: 200px;
+  margin: 10px;
+  padding: 8px;
+
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+
+}
+.on,.menu ul li:hover {
+  background-color: #05ACCD;
+  border-radius: 3px;
+}
+
+/*this codes are used for responsive page*/
 @media (max-width: 700px) {
   .button {
     display: flex;
@@ -52,45 +85,9 @@ body {
   body{
     background-image:url(responsive.jpg);
   }
-  
-
-  
- 
 }
 
-
-.menu {
-  background-color: #088FD2;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  margin-top: -17px;
-  margin-right: -5px;
-  margin-left: -5px;
-}
-
-.menu ul {
-  list-style-type: none;
-
-}
-.menu ul li {
-  display: inline-flex;
-  width: 200px;
-  margin: 10px;
-  padding: 8px;
-
-
-}
-.menu ul li a {
-  text-decoration: none;
-  color: white;
-
-}
-.on,
-.menu ul li:hover {
-  background-color: #05ACCD;
-  border-radius: 3px;
-}
+/*this codes are used in home page(index.html)*/
 .introduce {
   text-align: center;
   font-size: 5vw;
@@ -101,6 +98,7 @@ body {
   animation: animate 10s linear infinite;
   background-size: 400%;
 }
+
 @keyframes animate {
   0%{
     background-position: 0%;
@@ -108,56 +106,60 @@ body {
    100%{
     background-position: 400%;
   }
-
 }
 
+/*this codes are used in contact page*/
 .contact {
   float: right;
   background-color: #dcdcdc;
   margin-top: 32px;
   margin-left: 2vw;
 }
+
 form {
   color: black;
 }
+
 fieldset {
   background-color: #dcdcdc;
 }
+
 .cont {
   color: white;
   text-shadow: 4px 4px 5px black;
-
 }
+
 .cont1{
   margin-left: -15px;
 }
 
+/*this codes are used in submit page*/
 .submit {
   text-align: center;
-  border: 5px solid;
+  border: 8px ridge #291DE2;
   color: white;
   border-radius: 5px;
-  background-color: darkgrey;
   height: 100vh;
   background-color: transparent;
 }
+
 .submit h1{
   font-size: 6vw;
 }
 .submit h2{
   font-size: 3vw;
 }
-.submit1{
-  box-shadow: 10px 10px #404C4C;
-  
-  
+
+.submit h3 a{
+  border:3px solid;
+  font-size: 2vw;
+  text-decoration: none;
+  color: lightgreen;
+  border-radius: 5px;
 }
-button {
-  border: solid;
-  margin: 10px;
-  border-radius: 12px;
-  background-color: darkgrey;
-}
+
+
+/*this codes are used in cv page*/
 .cv {
   color: black;
   margin-left: -8px;
@@ -165,18 +167,33 @@ button {
   background-color: white;
   margin-right: -8px;
 }
+
+
+
 .topic{
-background-color: grey;
+color: white;
 padding: 10px;
 background: linear-gradient(120deg,#2B3856,#657383,#2B547E,#15317E);
 }
+
 .center{
   text-align: center;
 }
+
 .photo {
   padding: 0px;
   border-radius: 50%;
+  width :15%;
+   height: 200px;
+   float: right;
+  
 }
+.cv table,tr,th{
+  border:1px solid  ;
+  width: 50%;
+}
+
+/*this codes are used in portfolio page*/
 .desc {
   text-align: center;
   font-size: 30px;
@@ -184,13 +201,14 @@ background: linear-gradient(120deg,#2B3856,#657383,#2B547E,#15317E);
   text-shadow: 3px 3px 5px brown;
   margin-top: 15px;
 }
+
 .placeholder {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 10px;
   padding: 10px;
-
 }
+
 .placeholder1 {
   background-color: white;
   border: 3px solid black;
@@ -199,8 +217,15 @@ background: linear-gradient(120deg,#2B3856,#657383,#2B547E,#15317E);
   border-radius: 8px;
   width: 64%;
   height: auto;
-
 }
+
+/*this codes are used in site report page*/
+.report{
+  border-radius: 5px;
+  border: 8px ridge;
+  border-color:#838388;
+}
+
 .sitetopic{
   color: white;
   font-size: 40px;
@@ -208,9 +233,10 @@ background: linear-gradient(120deg,#2B3856,#657383,#2B547E,#15317E);
   background: linear-gradient(20deg,#ff0000,#00FFFF,#FFF380,#F70D1A,#8D38C9);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
-
-
 }
+
 .paragraph{
   color: white;
+  margin: 5px;
+  padding: 5px;
 }
