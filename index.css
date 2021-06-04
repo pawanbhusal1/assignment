@@ -47,7 +47,7 @@ body {
 }
 .menu ul li {
   display: inline-flex;
-  width: 200px;
+  width: 180px;
   margin: 10px;
   padding: 8px;
 
@@ -84,6 +84,10 @@ body {
   }
   body{
     background-image:url(responsive.jpg);
+  }
+  .report{
+     background-image:url(responsive.jpg);
+     
   }
 }
 
@@ -224,19 +228,36 @@ background: linear-gradient(120deg,#2B3856,#657383,#2B547E,#15317E);
   border-radius: 5px;
   border: 8px ridge;
   border-color:#838388;
+  background-image: url(reportphoto.jpg);
+  margin-left: -8px;
+  margin-right: -10px;
+ 
+
 }
 
 .sitetopic{
   color: white;
-  font-size: 40px;
-  margin: 5px;
-  background: linear-gradient(20deg,#ff0000,#00FFFF,#FFF380,#F70D1A,#8D38C9);
+  margin:15px;
+  background: linear-gradient(360deg,#00FFFF,#FFF380,#F70D1A,#8D38C9);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
 
+.sitetopic1{
+  color: white;
+  font-family:Arial; 
+  font-weight: bold;
+  margin: 10px; 
+  padding: 8px;
+}
 .paragraph{
   color: white;
-  margin: 5px;
-  padding: 5px;
+  margin: 10px;
+  padding: 8px;
+
+}
+.validphoto{
+  margin:10px;
+  padding: 10px;
+  width: 80%;
 }
