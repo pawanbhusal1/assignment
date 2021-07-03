@@ -174,7 +174,7 @@ fieldset {
 .topic{
 color: white;
 padding: 10px;
-background: linear-gradient(120deg,#2B3856,#657383,#2B547E,#15317E);
+background: linear-gradient(120deg,#2B547E,#15317E,#2B3856);
 }
 
 .center{
